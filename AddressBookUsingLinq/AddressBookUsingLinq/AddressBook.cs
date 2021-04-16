@@ -12,7 +12,7 @@ namespace AddressBookUsingLinq
         public string city { get; set; }
         public string state { get; set; }
         public int Zip { get; set; }
-        public int PhNum { get; set; }
+        public string PhNum { get; set; }
         public string email { get; set; }
     }
 }
