@@ -18,6 +18,12 @@ namespace AddressBookUsingLinq
                 new AddressBook(){FirstName="ankit",LastName="amin",address="majestic",city="surat",state="gujarat",Zip=562002,PhNum="8853247951",email="ankit@yahoo.com"},
                 new AddressBook(){FirstName="arnal",LastName="lobo",address="gama",city="panaji",state="goa",Zip=2236970,PhNum="7235698451",email="arnallobo@abc.in"}
             };
+
+            Manage manage = new Manage();
+            manage.TopRecords(AddressBookList);
+
+
+
         }
     }
 }
