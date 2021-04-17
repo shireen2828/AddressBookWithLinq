@@ -29,5 +29,16 @@ namespace AddressBookUsingLinq
                 Console.WriteLine(names.FirstName + "---" + names.Count);
             }
         }
+        public void RetrieveNames(List<AddressBook> listaddressbook)
+        {
+            var updateData = (from AddressBooks in listaddressbook
+                              orderby AddressBooks.FirstName.Length
+                              select AddressBooks);
+
+            foreach(var names in updateData)
+            {
+                Console.WriteLine(names.FirstName);
+            }
+        }
     }
 }
