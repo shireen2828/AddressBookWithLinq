@@ -20,7 +20,9 @@ namespace AddressBookUsingLinq
             };
 
             Manage manage = new Manage();
-            manage.TopRecords(AddressBookList);
+            // manage.TopRecords(AddressBookList);
+
+            manage.RetrieveCount(AddressBookList);
 
 
 

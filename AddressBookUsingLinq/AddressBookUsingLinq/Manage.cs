@@ -20,5 +20,14 @@ namespace AddressBookUsingLinq
             }
             
         }
+        public void RetrieveCount(List<AddressBook> listaddressbook)
+        {
+            var updateData = listaddressbook.GroupBy(x => x.FirstName).Select(x => new { FirstName= x.Key, Count = x.Count() });
+
+            foreach(var names in updateData)
+            {
+                Console.WriteLine(names.FirstName + "---" + names.Count);
+            }
+        }
     }
 }
